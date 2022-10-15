@@ -1,1 +1,2 @@
-# faruk_upn_zetta_learning
+# Faruk Muhammad Azmi SI20 UPNV
+# Zetta Camp
