@@ -1,0 +1,46 @@
+.top{
+    background-color: rgb(255, 49, 69);
+    padding: 1px 10px;
+    box-shadow: 0 4px 8px 0 rgb(65, 65, 113);
+    position: -webkit-sticky;
+}
+.box{
+    margin-top: 10px;
+    border: 2px solid;
+    padding: 10px 20px;
+    height: 400px;
+}
+.img1{
+    height: 330px;
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgb(196, 68, 68);
+    float: right;
+}
+ul{
+    margin-top: 1px;
+}
+.box2{
+    text-align: center;
+    height: 350px;
+    margin: 10px 0px;
+    
+}
+.card{
+    padding: 2px;
+    background-color: rgb(255, 49, 69);
+    box-shadow: 0 4px 8px 0 rgb(4, 0, 0);
+    width: 18%;
+    height: 350px;
+    display: inline-block;
+}
+.card img{
+    height: 300px;
+    width: 100%;
+}
+.card h3,p{
+    margin: 1px 0px;
+}
+
+
+
+/* footer #CreatedFarukAzmi */
