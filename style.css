@@ -1,8 +1,11 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .top{
     background-color: rgb(255, 49, 69);
     padding: 1px 10px;
     box-shadow: 0 4px 8px 0 rgb(65, 65, 113);
-    position: -webkit-sticky;
+    position: sticky;
 }
 .box{
     margin-top: 10px;
@@ -33,6 +36,7 @@ ul{
     height: 350px;
     display: inline-block;
 }
+/* combinators */
 .card img{
     height: 300px;
     width: 100%;
