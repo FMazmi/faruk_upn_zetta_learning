@@ -22,6 +22,10 @@
             margin-top: 20px;
             padding-bottom: 10px;
         }
+        .judul{
+            padding: 0px;
+            
+        }
 
         a{
             text-decoration: none;
@@ -56,23 +60,6 @@
             /* display: flex; */
             align-items: center;
         }
-
-        .buttons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 12px;
-        }
-
-        .buttons button {
-            width: fit-content;
-            padding: 8px 16px;
-            background-color: #01BC9A;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
     </style>
 </head>
 
@@ -85,13 +72,16 @@
         <nav>
             <ul>
                 <li><a href="#" style="color: black;">Page 1</a></li>
-                <li><a href="#" style="color: black;">Page 2</a></li>
+                <li><a href="item_list.html" style="color: black;">Page 2</a></li>
             </ul>
         </nav>
     </header>
+    <section class="judul">
+        <h2 style="text-align: center;">PAGE 1</h2>
+    </section>
     <section>
         <h1 style="text-align: center;">INPUT ITEM</h1>
-        <form oninput="FormData" method="post">
+        <form method="post" action="item_list.html">
             <center>
                 <table>
                     <tr>
@@ -127,45 +117,47 @@
                     <tr>
                         <td colspan="2">
                             <div class="box_input_row">
-                                <span style="margin-right: 32px;">Kondisi</span>
+                                <span style="margin-right: 32px;">Kondisi &emsp;:</span>
                                 <input name="kondisi" type="radio" id="baik">
                                 <label for="baik" style="margin-right: 16px;">Baik</label>
-                                <input name="kondisi" type="radio" id="broken">
-                                <label for="broken">Broken</label>
+                                <input name="kondisi" type="radio" id="kb">
+                                <label for="kb">Kurang Baik</label>
+                                <input name="kondisi" type="radio" id="buruk">
+                                <label for="buruk">Buruk</label>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div class="box_input">
-                                <label for="amount">Amount</label>
-                                <input type="number" id="amount">
+                                <label for="jumlah">Jumlah</label>
+                                <input type="number" id="jumlah">
                             </div>
                         </td>
                         <td>
                             <div class="box_input">
-                                <label for="price">Price</label>
-                                <input type="number" id="price">
+                                <label for="harga">Harga</label>
+                                <input type="number" id="harga">
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div class="box_input">
-                                <label for="date_created">Date Created</label>
-                                <input type="date" id="date_created">
+                                <label for="date">Tanggal</label>
+                                <input type="date" id="date">
                             </div>
                         </td>
                         <td>
                             <div class="box_input">
-                                <label for="expired_date">Expired Date</label>
-                                <input type="date" id="expired_date">
+                                <label for="telpon">No. Telepon</label>
+                                <input type="tel" id="telpon" placeholder="1234-4312-9085">
                             </div>
                         </td>
                     </tr>                
                 </table>
-                <div class="buttons">
-                    <button id="submit">Submit</button>
+                <div class="button" style="margin-top: 5px;">
+                    <button>Submit</button>
                 </div>
             </center>
         </form>
@@ -176,46 +168,46 @@
         <br>
         <table class="output_table">
             <tr>
-                <td><b>Item name</b></td>
-                <td>Chiki ball</td>
+                <td><b>Nama Item</b></td>
+                <td>Album Aespa Savage</td>
             </tr>
             <tr>
-                <td><b>Item Type</b></td>
-                <td>Food</td>
+                <td><b>Tipe Item</b></td>
+                <td>CD Vinyl</td>
             </tr>
             <tr>
-                <td><b>Description</b></td>
+                <td><b>Gambar</b></td>
+                <td>
+                    <img src="./assets/album1.jpg" alt="" width="100px">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Deskripsi</b></td>
                 <td>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                     ut labore et dolore magna aliqua.
                 </td>
             </tr>
             <tr>
-                <td><b>Condition</b></td>
+                <td><b>Kondisi</b></td>
                 <td>Good</td>
             </tr>
             <tr>
-                <td><b>Amount</b></td>
+                <td><b>Jumlah</b></td>
                 <td>4</td>
             </tr>
             <tr>
-                <td><b>Price</b></td>
-                <td>IDR 12000</td>
+                <td><b>Harga</b></td>
+                <td>Rp.600000</td>
             </tr>
             <tr>
-                <td><b>Date Created</b></td>
-                <td>12-07-2019</td>
+                <td><b>Tanggal</b></td>
+                <td>10-10-2022</td>
             </tr>
             <tr>
-                <td><b>Expired Date</b></td>
-                <td>15-07-2022</td>
-            </tr>
-            <tr>
-                <td><b>Item Image</b></td>
-                <td>
-                    <img src="./assets/images/chiki.jpg" alt="" width="100px">
-                </td>
-            </tr>
+                <td><b>No. Telepon</b></td>
+                <td>0821-1234-1243</td>
+            </tr>            
         </table>
     </section>
 
