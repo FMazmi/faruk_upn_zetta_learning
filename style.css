@@ -32,7 +32,7 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 #row2{
     margin: 1rem 0rem;
@@ -84,4 +84,6 @@ footer .btn{
 }
 .btn:hover{
     background-color: #004691;
+    height: 35px;
+    width: 105px;
 }
