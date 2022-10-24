@@ -76,6 +76,12 @@ header a {
     box-shadow: 2px 2px rgb(0, 0, 0, 0.2);
 }
 
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -91,11 +97,11 @@ header a {
     margin-bottom: 0;
 }
 
-.row .card {
+.box .card {
     border: 2px solid whitesmoke;
     text-align: left;
     /* flex: fit-content; */
-    width: 250px;
+    width: 350px;
     padding: 10px;
     border-radius: 5%;
     display: flex;
