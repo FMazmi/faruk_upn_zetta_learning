@@ -1,0 +1,17 @@
+<h1> {{judul}} </h1>
+    <div class="container">
+        <ul>
+            <div class="card">
+                <li *ngFor="let Obat of obat">
+                    <div>
+                        <h3> {{Obat.nama}} </h3><br><br>
+                        <p>Rp. {{Obat.harga}} </p>
+                        <button (click)="onAddObat.emit(Obat)" >Beli</button>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div class="container">
+        <app-bayar></app-bayar>
+    </div>
