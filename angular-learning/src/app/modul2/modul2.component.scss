@@ -1,0 +1,36 @@
+.card{
+    margin: 6px 10px 0px 10px;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.online{
+    color: lightgreen;
+    font-weight: bold;
+}
+
+p{
+    display: inline;
+    margin-right: 5px;
+}
+
+.btn{
+    width: 6rem;
+}
+.card-btn{
+    flex-direction: column;
+}
+button{
+    margin-top: 20px;
+}
+
+.btn.btn-primary.off{
+    background-color: red;
+    margin-left: 1rem;
+}

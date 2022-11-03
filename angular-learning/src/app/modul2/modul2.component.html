@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h3 class="card-title">{{profil[0]}}</h3>
+      <p class="card-text">Status Kehadiran</p>
+      <p [ngClass]="{online:currentStatus1==='online'}">{{currentStatus1}}</p>
+      <div class="card-btn">
+        <button class="btn btn-primary" (click)="changeStatus1()">Ada</button>
+        <button class="btn btn-primary off " (click)="changeStatus5()">Tidak Ada</button>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h3 class="card-title">{{profil[1]}}</h3>
+      <p class="card-text">Status Kehadiran</p>
+      <p [ngClass]="{online:currentStatus2==='online'}">{{currentStatus2}}</p>
+      <div class="card-btn">
+        <button class="btn btn-primary" (click)="changeStatus2()">Ada</button>
+        <button class="btn btn-primary off" (click)="changeStatus6()">Tidak Ada</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h3 class="card-title">{{profil[2]}}</h3>
+      <p class="card-text">Status Kehadiran</p>
+      <p [ngClass]="{online:currentStatus3==='online'}">{{currentStatus3}}</p>
+      <div class="card-btn">
+        <button class="btn btn-primary" (click)="changeStatus3()">Ada</button>
+        <button class="btn btn-primary off" (click)="changeStatus7()">Tidak Ada</button>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h3 class="card-title">{{profil[3]}}</h3>
+      <p class="card-text">Status Kehadiran</p>
+      <p [ngClass]="{online:currentStatus4==='online'}">{{currentStatus4}}</p>
+      <div class="card-btn">
+        <button class="btn btn-primary" (click)="changeStatus4()">Ada</button>
+        <button class="btn btn-primary off" (click)="changeStatus8()">Tidak Ada</button>
+      </div>
+    </div>
+  </div>
+</div>
