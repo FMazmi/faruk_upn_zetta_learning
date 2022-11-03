@@ -1,0 +1,29 @@
+<h1>Pembayaran</h1>
+<table border="0px" align="center">
+    <thead>
+        <tr>
+            <th>Jumlah Barang</th>
+            <th>Harga</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items">
+            <td>
+                {{item.title}} <span>x</span> {{item.jumlah}}
+            </td>
+            <td>
+                Rp. {{ item.harga }} 
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>
+                Total
+            </th>
+            <td>
+                Rp. {{total}}
+            </td>
+        </tr>
+    </tfoot>
+</table>

@@ -1,0 +1,17 @@
+<h2> {{judul}} </h2>
+<div class="container">  
+  <ul>
+    <div class="card">
+      <li *ngFor="let item of items">
+        <div class="card-items">
+          <h3>{{ item.title }}</h3>
+          <p>Rp. {{ item.harga }}</p>
+          <button (click)="addItem(item)">Beli</button>
+        </div>
+      </li>
+    </div>
+  </ul>
+  <div class="card">
+    <app-bayar [items]="selectedItems" (itemAdded)="addItem($event)"></app-bayar>
+  </div>
+</div>
